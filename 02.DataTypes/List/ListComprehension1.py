@@ -1,8 +1,13 @@
+# List comprehensions are a useful way of quickly creating lists whose 
+# contents obey a rule. 
+
+
 oldList = [1,2,3,4,5,6,7,8,9,10]
 print(oldList)
 
-#rule is,
+#syntax is,
 #newList = [expr(element) for element in oldList if condition]
+# and rule is defined in expr(element)
 newList = [x+1 for x in oldList]
 print(newList)
 
