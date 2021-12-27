@@ -4,15 +4,24 @@
 # 3. if iterable is empty then result also will be an empty iterable.
 
 import itertools
+import operator
 
 l = [1, 4, 5, 7]
 
 print(list(itertools.accumulate(l))) # here addition takes place
 # because no func was mentioned
 
-import operator
 
 print(list(itertools.accumulate(l, operator.mul)))
+
+print(list(itertools.accumulate(l, operator.truediv)))
+
+
+
+
+
+
+
 
 # question: User defined func can be passed? 
 

@@ -15,7 +15,12 @@ print(d['third']) # it's giving zero because I have set the default datatype as 
 
 s = 'Key not present, wat up!'
 
-d2 = defaultdict(s, first=1, seond=2)
+d2 = defaultdict(lambda: s)
 
-print(d2)
+d2['first'] = 1
+d2['second'] = 2
+
+print(d2['third'])
+
+# that's one of the ways you can handle missing keys in a dictionary.
 

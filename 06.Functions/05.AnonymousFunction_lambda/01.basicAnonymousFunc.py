@@ -9,10 +9,12 @@
 
 
 # normal functions
-def cubeNum(num): return num*num*num
+def cubenum(num): return num*num*num
+
 
 # anonymous functions
-cubeX = lambda x: x*x*x
+cubex = lambda x: x*x*x
 
-print(cubeNum(7))
-print(cubeX(7))
+print(cubenum(7))
+print(cubex(7))
+

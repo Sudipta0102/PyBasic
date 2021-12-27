@@ -7,7 +7,7 @@ list = [1,2]
 count = 0
 
 for i in itertools.cycle('AB'):
-    if count>6: #
+    if count > 6:
         break
     else:
         print(i, end = ' ')

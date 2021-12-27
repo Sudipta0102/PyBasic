@@ -6,12 +6,12 @@
 # of object has to flow so that we don't have to break. 
 
 
-# like this
+# like this,
 import itertools
 
 for i in itertools.count(5, 10):
-    if (i>100):
+    if i > 100:
         break
     else:
-        print(i, end = ' ')
+        print(i, end=' ')
 
