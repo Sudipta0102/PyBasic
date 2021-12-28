@@ -1,0 +1,4 @@
+INFO:root:main starts
+INFO:root:inside func_do
+INFO:root:Inside func_am
+INFO:root:main ends
