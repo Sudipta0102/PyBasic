@@ -7,6 +7,7 @@ def hello_decorator(func):
         return returned_val
     return inner
 
+
 @hello_decorator
 def addTwoNums(a, b):
     print("in function")

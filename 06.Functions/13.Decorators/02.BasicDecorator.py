@@ -1,6 +1,8 @@
 # this is a decorator which calculates the time taken to execute a function
 import time
 import math
+
+
 def calculate_time(func):
     def inner(*args, **kwargs):
         # inner(*args, **kwargs) is way of taking any arguments to the used function.
@@ -13,10 +15,12 @@ def calculate_time(func):
 
     return inner
 
-@calculate_time # instead of countFactorial = calculate_time(countFactorial)
-def countFactorial(num):
+
+# instead of countFactorial = calculate_time(countFactorial)
+@calculate_time
+def count_factorial(num):
     print(f"The factorial of {num} is:", math.factorial(num))
 
-#countFactorial = calculate_time(countFactorial)
 
-countFactorial(20)
+count_factorial(20)
+

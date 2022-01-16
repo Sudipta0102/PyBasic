@@ -14,9 +14,20 @@ def hello_decorator(func):
 
 
 def func1():
-    print("I am function")        
+    print("I am function 1")
 
-func1 = hello_decorator(func1) # this is equivalent to the @hello_decorator at the top
-                               # of func1()
 
-func1()
+# this is equivalent to the @hello_decorator at the top of func1()
+func1 = hello_decorator(func1)
+
+
+@hello_decorator
+def func2():
+    print('I am function 2')
+
+
+if __name__ == '__main__':
+    func1()
+    print('*' * 60)
+    func2()
+
