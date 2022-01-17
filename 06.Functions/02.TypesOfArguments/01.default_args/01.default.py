@@ -1,7 +1,8 @@
-def func(x, y = 10):
+def func(x, y=10):
     print(x)
     print(y)
     print()
+
 
 func(11)
 func(11, 12)
@@ -13,11 +14,12 @@ func(11, 12)
 # only one rule: all non default argument should be there at the beginning.
 
 
-def func1(x = 1, y = 2, z = 3):
+def func1(x=1, y=2, z=3):
     print(x)
     print(y)
     print(z)
     print()
+
 
 # all the arguments can have default values
 func1()
@@ -27,3 +29,4 @@ func1()
 func1(y=10) 
 func1(z=30)
 func1(y=10, z=30)
+
