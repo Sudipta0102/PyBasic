@@ -15,16 +15,18 @@
 # 1. Use tuples when your data cannot/should not change. i.e. you want use 
 # the immutability feature.
 
-          
-
 
 def apply_twize(func, arg):
     return func(func(arg))
 
+
 def add_five(x):
     return x+5    
 
-print(apply_twize(add_five, 10))    
+
+print(apply_twize(add_five, 10))
+
+
 
 
 
