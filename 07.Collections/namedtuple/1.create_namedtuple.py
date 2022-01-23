@@ -9,6 +9,8 @@ print(student1._fields)
 print(student1.name)
 print(student1.age)
 print(student1.city)
+print(type(Student))
+print(type(student1))
 
 City = namedtuple('City', 'polulation, location')
 city1 = City(12, 'bleh')
