@@ -17,6 +17,10 @@ arr = np.zeros((3, 4), dtype=int)
 print(arr)
 print('*'*20)
 
+arr = np.zeros([3, 4], dtype=int)
+print(arr)
+print('*'*20)
+
 # 3. same can be done with one()
 arr = np.ones((3, 4), dtype=int)
 print(arr)
@@ -32,3 +36,19 @@ arr = np.random.randint(1, 11, (3, 4))
 print(arr)
 arr = np.random.random((3, 4))
 print(arr)
+print('*'*20)
+
+# 6. Empty arrays
+arr = np.empty(2, dtype=int, order='C')
+print(arr)
+print('*'*20)
+
+arr = np.empty([2, 2], dtype=int)
+print(arr)
+print('*'*20)
+
+arr = np.empty([3, 3])
+print(arr)
+print('*'*20)
+
+
