@@ -36,7 +36,7 @@ def palindrome1(s):
         first_half = s[:half]
         second_half = s[half:]
     else:
-        first_half =s[:half]
+        first_half = s[:half]
         second_half = s[half+1:]
 
     # finding out reverse of second_half string using slicing technique again
