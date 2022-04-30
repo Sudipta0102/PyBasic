@@ -1,5 +1,5 @@
 # taking an empty list of list 
-list = [ ]
+list = []
 n = int(input("Enter the number of elements:"))
 
 for i in range(0, n):

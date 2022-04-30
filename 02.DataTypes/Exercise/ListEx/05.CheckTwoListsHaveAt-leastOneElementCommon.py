@@ -41,10 +41,7 @@ def has_common_elements1(a, b):
     first = set(a)
     second = set(b)
 
-    if len(first.intersection(second)) > 0:
-        return True
-    else:
-        return False
+    return len(first.intersection(second)) > 0
 
 
 print(has_common_elements1(a, b))
